@@ -29,7 +29,7 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.INTEGER,
             allowNull: false,
             validate: {
-                max: 5
+                len: [1]
             }
         },
         streetAddress: {
