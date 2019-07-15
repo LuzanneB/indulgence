@@ -10,4 +10,4 @@ var streetAddress = faker.address.streetAddress();
 var city = faker.address.city();
 var state = faker.address.state();
 
-console.log(firstName, lastName, phoneNumber, image, email, zipCode,streetAddress, city, state)
+console.log(firstName, lastName, phoneNumber, image, email, zipCode,streetAddress, city, state);
