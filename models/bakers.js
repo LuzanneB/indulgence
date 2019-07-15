@@ -56,7 +56,8 @@ module.exports = function(sequelize, DataTypes) {
     image: {
       type: DataTypes.STRING,
       allowNull: true
-    }
+    },
+    freezeTableName: true
   });
   return Bakers;
 };

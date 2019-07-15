@@ -2,7 +2,7 @@ var faker = require("faker");
 
 function generateBakers() {
   let users = [];  
-  for (var i = 0; i < 100000; i++) {
+  for (var i = 0; i < 100; i++) {
     var firstName = faker.name.firstName();
     var lastName = faker.name.lastName();
     var phoneNumber = faker.phone.phoneNumberFormat();
@@ -14,17 +14,17 @@ function generateBakers() {
     var state = faker.address.state();
 
     users.push({});
-    console.log(
-      "Name: " + firstName,
-      lastName,
-      "\nPhone Number: " + phoneNumber,
-      "\nAvatar: " + image,
-      "\nEmail: " + email,
-      "\nZip Code: " + zipCode,
-      "\nStreet Address: " + streetAddress,
-      "\nCity: " + city,
-      "\nState: " + state + "\n-------------------------"
-    );
+    // console.log(
+    //   "Name: " + firstName,
+    //   lastName,
+    //   "\nPhone Number: " + phoneNumber,
+    //   "\nAvatar: " + image,
+    //   "\nEmail: " + email,
+    //   "\nZip Code: " + zipCode,
+    //   "\nStreet Address: " + streetAddress,
+    //   "\nCity: " + city,
+    //   "\nState: " + state + "\n-------------------------"
+    // );
   }
 }
 generateBakers();
