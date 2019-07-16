@@ -83,4 +83,60 @@ db.sequelize.sync(syncOptions).then(function() {
 
 // generateBakers();
 
+// let generateProducts = function () {
+
+//   let productObj = {
+//       category: '',
+//       foreignKey: 0
+//   };
+
+//   const categoryChoices = {
+//       1: 'Cake',
+//       2: 'Pie',
+//       3: 'Cookies',
+//       4: 'Donuts',
+//       5: 'Cupcakes',
+//       6: 'Brownies'
+//   };
+
+//   let incrementerStart = 1;
+//   let incrementerStop = 50;
+
+//   for (let i = incrementerStart; i <= incrementerStop; i++) {
+
+//       //This is the random number of products the baker gets.
+//       let randomProducts = (Math.floor(Math.random() * 6) + 1);
+//       let thisBakersProducts = [];
+
+//       for (j = 0; j < randomProducts; j++) {
+//           // let newProductTableLine = [];
+//           let randomProductID = (Math.floor(Math.random() * 6) + 1);
+//           let randomProduct = categoryChoices[randomProductID]
+//           let bakerID = i;
+//           //If the product is already in the baker's list of products, decrease incrementer so that it will run again.
+//           if (thisBakersProducts.includes(randomProduct)) {
+//               j--;
+//           }
+//           else {
+//               thisBakersProducts.push(randomProduct);
+//               // newProductTableLine.push(randomProduct, bakerID);
+//               productObj.category = randomProduct;
+//               productObj.foreignKey = bakerID
+
+//               console.log(productObj);
+
+//               db.Products.create(productObj).then(function (dbExample) {
+//                   res.json(dbExample);
+//                   console.log(dbExample);
+//               });
+//           }
+//       }
+//   }
+// }
+
+// generateProducts();
+
+
+
+
 module.exports = app;
