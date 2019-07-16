@@ -280,29 +280,31 @@
   </header>
   <!-- ========== END HEADER ========== -->
 
-  <!-- ========== MAIN CONTENT ========== -->
+  <!-- ========== MAIN CONTENT ==========
+     Hero Section -->
   <main id="content" role="main">
-    <!-- Hero Section -->
+   
     <div class="d-lg-flex position-relative">
       <div class="container d-lg-flex align-items-lg-center space-top-2 space-top-md-5 space-lg-0 min-height-lg-100vh">
         <!-- Content -->
         <div class="row w-100">
           <div class="col-lg-5">
-            <h1 class="display-4 font-size-md-down-5 mb-3">Introducing Front</h1>
+            <h1 class="display-4 font-size-md-down-5 mb-3">Indulge in <strong>Cuisi</strong></h1>
             <p>
-              Your company will look
+              Your connection to 
               <span class="text-primary">
                 <strong class="u-text-animation u-text-animation--typing"></strong>
               </span>
               <br>
-              Attract more visitors, and win more business with Front template.
+              Simplify your next event by finding a Cuisi chef in your area.    
             </p>
 
             <div class="d-flex align-items-center flex-wrap">
-              <a class="btn btn-soft-primary btn-wide transition-3d-hover" href="../pages/login-simple.html">Get Started</a>
+              <input type="text" placeholder="Enter your zip code" id="zip">
+              <a class="btn btn-soft-primary btn-wide transition-3d-hover" id = "searchzip" href="../pages/login-simple.html">Search</a> 
 
               <!-- Fancybox -->
-              <a class="js-fancybox media align-items-center u-media-player min-width-21 ml-3" href="javascript:;"
+              <!-- <a class="js-fancybox media align-items-center u-media-player min-width-21 ml-3" href="javascript:;"
                  data-src="//vimeo.com/167434033"
                  data-speed="700"
                  data-animate-in="zoomIn"
@@ -314,7 +316,7 @@
                 <span class="media-body">
                   Play video
                 </span>
-              </a>
+              </a> -->
               <!-- End Fancybox -->
             </div>
           </div>
@@ -322,13 +324,19 @@
         <!-- End Content -->
 
         <!-- SVG Background -->
-        <div id="SVGMainHero" class="col-lg-9 col-xl-7 svg-preloader d-none d-lg-block position-absolute top-0 right-0 pr-0" style="margin-top: 105.6px;">
-          <figure class="ie-main-hero">
-            <img class="js-svg-injector" src="../../assets/svg/illustrations/main-hero.svg" alt="Image Description"
-                 data-img-paths='[
-                   {"targetId": "#SVGMainHeroImg1", "newPath": "../../assets/img/750x750/img2.jpg"}
-                 ]'
-                 data-parent="#SVGMainHero">
+        <!-- <div id="SVGMainHero" class="col-lg-9 col-xl-7 svg-preloader d-none d-lg-block position-absolute top-0 right-0 pr-0" style="margin-top: 105.6px;">
+          <figure class="ie-main-hero"> -->
+              <image id="SVGMainHeroImg1" style="overflow:visible;" width="750" height="750" src="https://www.readyseteat.com/sites/g/files/qyyrlu501/files/uploadedImages/img_6030_98771.jpg" transform="matrix(1.4462 0 0 1.4448 290.09 0)"></image>
+
+       
+            </figure>
+          </div>
+          <!-- End SVG Background -->
+        </div>
+      </div>
+            <!-- <img class="js-svg-injector" src="https://www.readyseteat.com/sites/g/files/qyyrlu501/files/uploadedImages/img_6030_98771.jpg" alt="Image Description"
+           
+                 data-parent="#SVGMainHero"> -->
           </figure>
         </div>
         <!-- End SVG Background -->
@@ -340,406 +348,94 @@
     <div class="container space-top-3 space-bottom-md-3 space-bottom-2">
       <!-- Title -->
       <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
-        <span class="btn btn-xs btn-soft-success btn-pill mb-2">What we do?</span>
-        <h2>Front makes designing easy and performance fast</h2>
+        <span class="btn btn-xs btn-soft-success btn-pill mb-2">Select Your Product</span>
+        <h2>What product are you looking for?</h2>
       </div>
       <!-- End Title -->
 
+
+
       <div class="row">
-        <div class="col-md-4 mb-7">
+        <div class="col-md-2 mb-7">
           <div class="text-center px-lg-3">
-            <span class="btn btn-icon btn-lg btn-soft-danger rounded-circle mb-5">
-              <span class="fab fa-yelp fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
-            </span>
-            <h3 class="h5">Professional Design</h3>
-            <p class="mb-md-0">Achieve virtually any design and layout from within the one template.</p>
+            <button id="iconbutton" class="btn btn-icon btn-lg btn-soft-primary rounded-circle mb-5">
+              <img src="cakeicon.png" style="height: 65px; width: 65px" class="ffa-2x btn-icon__inner btn-icon__inner-bottom-minus"></img>
+            </button>
+            <h3 class="h5">Cakes</h3>
+            <p class="mb-md-0">They're delicious!</p>
           </div>
         </div>
+        
+        <div class="col-md-2 mb-7">
+            <div class="text-center px-lg-3">
+              <button id="iconbutton" class="btn btn-icon btn-lg btn-soft-primary rounded-circle mb-5">
+                  <img src="cookieicon.png" style="height: 65px; width: 65px" class="ffa-2x btn-icon__inner btn-icon__inner-bottom-minus"></img>
+              </button>
+              <h3 class="h5">Cookies</h3>
+              <p class="mb-md-0">They're also delicious!</p>
+            </div>
+          </div>
 
-        <div class="col-md-4 mb-7">
+          <div class="col-md-2 mb-7">
+              <div class="text-center px-lg-3">
+                <button id="iconbutton" class="btn btn-icon btn-lg btn-soft-primary rounded-circle mb-5">
+                    <img src="pieicon.png" style="height: 65px; width: 65px" class="ffa-2x btn-icon__inner btn-icon__inner-bottom-minus"></img>
+                </button>
+                <h3 class="h5">Pies</h3>
+                <p class="mb-md-0">Even more delicious.</p>
+              </div>
+            </div>
+
+        <div class="col-md-2 mb-7">
           <div class="text-center px-lg-3">
-            <span class="btn btn-icon btn-lg btn-soft-primary rounded-circle mb-5">
-              <span class="fas fa-fire fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
-            </span>
-            <h3 class="h5">Front Strategy</h3>
-            <p class="mb-md-0">We strive to figure out ways to help your business grow through all platforms.</p>
+            <button id="iconbutton" class="btn btn-icon btn-lg btn-soft-primary rounded-circle mb-5">
+              <img src="donuticon.png" style="height: 65px; width: 65px" class="fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></img>
+            </button>
+            <h3 class="h5">Donuts</h3>
+            <p class="mb-md-0">Gonuts for Donuts.</p>
           </div>
         </div>
 
-        <div class="col-md-4 mb-7">
+        <div class="col-md-2 mb-7">
+            <div class="text-center px-lg-3">
+              <button id="iconbutton" class="btn btn-icon btn-lg btn-soft-primary rounded-circle mb-5">
+                  <img src="cupcakeicon.png" style="height: 65px; width: 65px" class="ffa-2x btn-icon__inner btn-icon__inner-bottom-minus"></img>
+              </button>
+              <h3 class="h5">Cupcakes</h3>
+              <p class="mb-md-0">Better than cake.</p>
+            </div>
+          </div>
+
+        <div class="col-md-2 mb-7">
           <div class="text-center px-lg-3">
-            <span class="btn btn-icon btn-lg btn-soft-success rounded-circle mb-5">
-              <span class="fab fa-whmcs fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
-            </span>
-            <h3 class="h5">Unlimited Power</h3>
-            <p class="mb-md-0">Find what you need in one template and combine features at will.</p>
+            <button id="iconbutton" class="btn btn-icon btn-lg btn-soft-primary rounded-circle mb-5">
+                <img src="Brownieicon.png" style="height: 65px; width: 65px" class="ffa-2x btn-icon__inner btn-icon__inner-bottom-minus"></img>
+            </button>
+            <h3 class="h5">Brownies</h3>
+            <p class="mb-md-0">Fudgey Heaven.</p>
           </div>
         </div>
       </div>
 
-      <img class="img-fluid d-none d-md-block w-75 mx-auto mb-7" src="../../assets/svg/components/pointer-1.svg" alt="SVG Arrow">
 
-      <!-- Title -->
-      <div class="w-md-60 w-lg-50 text-center mx-auto mb-7">
-        <h4 class="h5">
-          It is fast and easy. <span class="font-weight-normal">Create your first and ongoing website with Front.</span>
-        </h4>
-      </div>
-      <!-- End Title -->
+      
 
-      <!-- Mockup Browser -->
-      <div class="u-browser-v1 mx-auto mb-4">
-        <!-- SVG Background Shape -->
-        <figure id="SVGbgShapeID1" class="svg-preloader ie-soft-triangle-shape">
-          <img class="js-svg-injector" src="../../assets/svg/components/soft-triangle-shape.svg" alt="Image Description"
-               data-parent="#SVGbgShapeID1">
-        </figure>
-        <!-- End SVG Background Shape -->
+     
 
-        <!-- Mockup Browser -->
-        <figure id="SVGBrowserShape" class="svg-preloader ie-browser u-browser-v1__svg">
-          <img class="js-svg-injector" src="../../assets/svg/illustrations/browser.svg" alt="Image Description"
-               data-img-paths='[
-                 {"targetId": "#SVGBrowserShapeImg1", "newPath": "../../assets/img/855x665/img1.jpg"}
-               ]'
-               data-parent="#SVGBrowserShape">
-        </figure>
-        <!-- End Mockup Browser -->
-      </div>
-      <!-- End Mockup Browser -->
 
-      <div class="w-50 w-md-40 w-lg-30 text-center mx-auto">
-        <p class="small">We are launching soon. Join the priority list for information and early access.</p>
-      </div>
-    </div>
-    <!-- End Icon Blocks Section -->
-
-    <!-- Pricing Section -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5 mb-7 mb-lg-0">
-          <!-- Title -->
-          <div class="pr-lg-4 mb-7">
-            <span class="btn btn-xs btn-soft-success btn-pill mb-2">Pricing plans</span>
-            <h2>No additional costs.<br>Pay for what you use.</h2>
-            <p>Choose the most suitable service for your needs with reasonable price.</p>
-          </div>
-          <!-- End Title -->
-
-          <!-- Button Group -->
-          <div class="btn-group btn-group-toggle">
-            <a class="js-animation-link btn btn-outline-secondary btn-custom-toggle-primary btn-sm-wide active" href="javascript:;"
-               data-target="#pricingMonthly"
-               data-link-group="idPricing"
-               data-animation-in="slideInUp">Monthly</a>
-            <a class="js-animation-link btn btn-outline-secondary btn-custom-toggle-primary btn-sm-wide" href="javascript:;"
-               data-target="#pricingYearly"
-               data-link-group="idPricing"
-               data-animation-in="slideInUp">
-              Yearly
-              <span class="badge badge-success badge-pill badge-bigger badge-pos">10% OFF</span>
-            </a>
-          </div>
-          <!-- End Button Group -->
-        </div>
-
-        <div class="col-lg-7">
-          <!-- Monthly Plans -->
-          <div id="pricingMonthly" class="row align-items-center mb-3" data-target-group="idPricing">
-            <div class="col-sm-6 mb-7 mb-sm-0">
-              <!-- Pricing -->
-              <div class="card border-0 shadow-sm">
-                <header id="SVGwave1BottomShapeID1" class="svg-preloader card-header border-0 position-relative bg-primary text-white p-5 pb-11">
-                  <h3 class="h4 mb-1">Individual Plan</h3>
-                  <span class="d-block">
-                    <span class="align-top">$</span>
-                    <span class="display-4 font-weight-semi-bold">22</span>
-                    <span>/month</span>
-                  </span>
-
-                  <div class="position-absolute right-0 bottom-0 left-0">
-                    <figure class="ie-wave-1-bottom">
-                      <img class="js-svg-injector" src="../../assets/svg/components/wave-1-bottom.svg" alt="Image Description"
-                           data-parent="#SVGwave1BottomShapeID1">
-                    </figure>
-                  </div>
-                </header>
-
-                <!-- Content -->
-                <div class="card-body pt-0 px-5 pb-5">
-                  <ul class="list-group list-group-flush list-group-borderless mb-4">
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        Community support
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        400+ pages
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        100+ header variations
-                      </div>
-                    </li>
-                    <li class="list-group-item disabled py-2">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        20+ home page options
-                      </div>
-                    </li>
-                  </ul>
-
-                  <button type="button" class="btn btn-sm btn-block btn-soft-primary transition-3d-hover">Get Started</button>
-                </div>
-                <!-- End Content -->
-              </div>
-              <!-- End Pricing -->
-            </div>
-
-            <div class="col-sm-6">
-              <!-- Pricing -->
-              <div class="card border-0 shadow-sm">
-                <header id="SVGwave1BottomShapeID2" class="svg-preloader card-header border-0 position-relative bg-primary text-white p-5 pb-11">
-                  <h3 class="h4 mb-1">Enterprise Plan</h3>
-                  <span class="d-block">
-                    <span class="align-top">$</span>
-                    <span class="display-4 font-weight-semi-bold">99</span>
-                    <span>/month</span>
-                  </span>
-
-                  <div class="position-absolute right-0 bottom-0 left-0">
-                    <figure class="ie-wave-1-bottom">
-                      <img class="js-svg-injector" src="../../assets/svg/components/wave-1-bottom.svg" alt="Image Description"
-                           data-parent="#SVGwave1BottomShapeID2">
-                    </figure>
-                  </div>
-                </header>
-
-                <!-- Content -->
-                <div class="card-body pt-0 px-5 pb-5">
-                  <ul class="list-group list-group-flush list-group-borderless mb-4">
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        24/7 support
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        400+ pages
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        200+ header variations
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        40+ home page options
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        E-commerce
-                      </div>
-                    </li>
-                  </ul>
-
-                  <button type="button" class="btn btn-sm btn-block btn-soft-primary transition-3d-hover">Get Started</button>
-                </div>
-                <!-- End Content -->
-              </div>
-              <!-- End Pricing -->
-            </div>
-          </div>
-          <!-- End Monthly Plans -->
-
-          <!-- Yearly Plans -->
-          <div id="pricingYearly" class="row align-items-center mb-3" style="display: none; opacity: 0;" data-target-group="idPricing">
-            <div class="col-sm-6 mb-7 mb-sm-0">
-              <!-- Pricing -->
-              <div class="card border-0 shadow-sm">
-                <header id="SVGwave1BottomShapeID3" class="svg-preloader card-header border-0 position-relative bg-primary text-white p-5 pb-11">
-                  <h3 class="h4 mb-1">Individual Plan</h3>
-                  <span class="d-block">
-                    <span class="align-top">$</span>
-                    <span class="display-4 font-weight-semi-bold">242</span>
-                    <span>/year</span>
-                  </span>
-
-                  <div class="position-absolute right-0 bottom-0 left-0">
-                    <figure class="ie-wave-1-bottom">
-                      <img class="js-svg-injector" src="../../assets/svg/components/wave-1-bottom.svg" alt="Image Description"
-                           data-parent="#SVGwave1BottomShapeID3">
-                    </figure>
-                  </div>
-                </header>
-
-                <!-- Content -->
-                <div class="card-body pt-0 px-5 pb-5">
-                  <ul class="list-group list-group-flush list-group-borderless mb-4">
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        24/7 support
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        400+ pages
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        100+ header variations
-                      </div>
-                    </li>
-                    <li class="list-group-item disabled py-2">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        20+ home page options
-                      </div>
-                    </li>
-                  </ul>
-
-                  <button type="button" class="btn btn-sm btn-block btn-soft-primary transition-3d-hover">Get Started</button>
-                </div>
-                <!-- End Content -->
-              </div>
-              <!-- End Pricing -->
-            </div>
-
-            <div class="col-sm-6">
-              <!-- Pricing -->
-              <div class="card border-0 shadow-sm">
-                <header id="SVGwave1BottomShapeID4" class="svg-preloader card-header border-0 position-relative bg-primary text-white p-5 pb-11">
-                  <h3 class="h4 mb-1">Enterprise Plan</h3>
-                  <span class="d-block">
-                    <span class="align-top">$</span>
-                    <span class="display-4 font-weight-semi-bold">1089</span>
-                    <span>/year</span>
-                  </span>
-
-                  <div class="position-absolute right-0 bottom-0 left-0">
-                    <figure class="ie-wave-1-bottom">
-                      <img class="js-svg-injector" src="../../assets/svg/components/wave-1-bottom.svg" alt="Image Description"
-                           data-parent="#SVGwave1BottomShapeID4">
-                    </figure>
-                  </div>
-                </header>
-
-                <!-- Content -->
-                <div class="card-body pt-0 px-5 pb-5">
-                  <ul class="list-group list-group-flush list-group-borderless mb-4">
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        24/7 support
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        400+ pages
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        200+ header variations
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        40+ home page options
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        E-commerce
-                      </div>
-                    </li>
-                  </ul>
-
-                  <button type="button" class="btn btn-sm btn-block btn-soft-primary transition-3d-hover">Get Started</button>
-                </div>
-                <!-- End Content -->
-              </div>
-              <!-- End Pricing -->
-            </div>
-          </div>
-          <!-- End Yearly Plans -->
-
-          <p class="small text-muted text-center">
-            * <a class="link-muted" href="../pages/terms.html">Terms</a> are subject to change.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- End Pricing Section -->
 
     <!-- Blog News Section -->
     <div class="gradient-half-primary-v2">
       <div class="container space-2 space-md-3 px-lg-7">
         <!-- Title -->
         <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
-          <span class="btn btn-xs btn-soft-success btn-pill mb-2">News &amp; Blog</span>
-          <h2>Read our latest news</h2>
-          <p>Our duty towards you is to share our experience we're reaching in our work path with you.</p>
+          <span class="btn btn-xs btn-soft-success btn-pill mb-2">Cuisi Reviews</span>
+          <h2>Read the latest reviews about Cuisi</h2>
+          <p>Find out why Cuisi is changing how you plan the food at your next event.</p>
         </div>
         <!-- End Title -->
 
-        <!-- News Carousel -->
+        <!-- Reviews Carousel -->
         <div class="js-slick-carousel u-slick u-slick--equal-height u-slick--gutters-3"
              data-slides-show="3"
              data-slides-scroll="1"
@@ -1313,7 +1009,7 @@
 
       // initialization of text animation (typing)
       var typed = new Typed(".u-text-animation.u-text-animation--typing", {
-        strings: ["more professional.", "perfect in every way.", "astonishing."],
+        strings: ["culinary convenience.", "the perfect confections.", "homecooking bliss.", "delectable cuisine."],
         typeSpeed: 60,
         loop: true,
         backSpeed: 25,
@@ -1326,6 +1022,8 @@
       // initialization of go to
       $.HSCore.components.HSGoTo.init('.js-go-to');
     });
+
+ 
   </script>
 </body>
 </html>
