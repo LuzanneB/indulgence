@@ -23,21 +23,10 @@ module.exports = function(app) {
       res.json(dbExample);
     });
   });
-
-  for (var i = 0; i < 25000; i++) {
-    app.post("/api/bakers", function(req, res) {
-      db.Bakers.create({
-        firstName: faker.name.firstName(),
-        lastName: faker.name.lastName(),
-        phoneNumber: faker.phone.phoneNumberFormat(),
-        email: faker.internet.email(),
-        streetAddress: faker.address.streetAddress(),
-        zipCode: faker.address.zipCode(),
-        city: faker.address.city(),
-        state: faker.address.state(),
-        image: faker.image.avatar()
-      });
-      return res.json(dbBakers);
+  // Post to Bakers API
+  app.post("/api/bakers", function(req, res) {
+    db.bakers.create(req.body).then(function(data) {
+      return res.json(data);
     });
-  }
+  });
 };
