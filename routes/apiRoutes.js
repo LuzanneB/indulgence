@@ -25,7 +25,7 @@ module.exports = function(app) {
   });
   // Post to Bakers API
   app.post("/api/bakers", function(req, res) {
-    db.Seeds.create(req.body).then(function(data) {
+    db.bakers.create(req.body).then(function(data) {
       return res.json(data);
     });
   });

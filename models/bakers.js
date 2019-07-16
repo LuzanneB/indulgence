@@ -2,62 +2,38 @@ module.exports = function(sequelize, DataTypes) {
   var Bakers = sequelize.define("Bakers", {
     firstName: {
       type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: [1]
-      }
+      allowNull: false
     },
     lastName: {
       type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: [1]
-      }
+      allowNull: false
     },
     phoneNumber: {
-      type: DataTypes.STRING,
-      defaultValue: "1800-867-5309"
+      type: DataTypes.STRING
     },
     email: {
       type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: [1]
-      }
+      allowNull: false
     },
     zipCode: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      validate: {
-        len: [1]
-      }
+      type: DataTypes.STRING,
+      allowNull: false
     },
     streetAddress: {
       type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: [1]
-      }
+      allowNull: false
     },
     city: {
       type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: [1]
-      }
+      allowNull: false
     },
     state: {
       type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: [1]
-      }
+      allowNull: false
     },
     image: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
-    freezeTableName: true
+      type: DataTypes.STRING
+    }
   });
   return Bakers;
 };
