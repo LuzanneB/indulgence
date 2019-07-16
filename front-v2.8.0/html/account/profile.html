@@ -893,7 +893,7 @@
             <div class="card p-1 mb-4">
               <div class="card-body text-center">
                 <div class="mb-3">
-                  <img class="u-lg-avatar rounded-circle" id="baker-pic" src="/img/profile2/Profile_1_160x160.jpg" alt="My Cool Picture is supposed to show up here.">
+                  <img class="u-lg-avatar rounded-circle" id="baker-pic" src="/public/img/profile2/Profile_1_160x160.jpg" alt="My Cool Picture is supposed to show up here.">
                 </div>
 
                 <div class="mb-3">
@@ -909,10 +909,11 @@
                 </div>
 
                 <a class="text-secondary small" href="#">
-                  <i class="far fa-flag mr-1"></i> Report this user
+                  <i class="mr-1"></i> 
                 </a>
               </div>
             </div>
+                     
             <!-- End Profile Card -->
 
             <!-- Contacts  -->
@@ -948,7 +949,7 @@
                 <!-- Social Profiles -->
                 <a class="media mb-4" href="#">
                   <div class="u-sm-avatar mr-3">
-                    <img class="img-fluid" src="#" alt=>
+                    <img class="img-fluid" src="../../assets/img/160x160/Pinterest-Free-PNG-Image_160x160.png" alt=>
                   </div>
                   <div class="media-body">
                     <span class="d-block text-dark">Pinterest</span>
@@ -1021,100 +1022,24 @@
 
             <!-- Icon Blocks -->
             <div class="row">
-              <div class="col-md-6 col-lg-4">
-                <!-- List Group -->
-                <ul class="list-group list-group-transparent list-group-flush list-group-borderless mb-0">
-                  <li class="list-group-item pt-0 pb-4">
-                    <div class="media">
-                      <span class="fas fa-envelope list-group-icon mr-3"></span>
-                      <div class="media-body text-lh-sm">
-                        <span class="d-block mb-1">Email:</span>
-                        <a href="#">natalie.curtis@gmail.com</a>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item pt-0 pb-4">
-                    <div class="media">
-                      <span class="fas fa-link list-group-icon mr-3"></span>
-                      <div class="media-body text-lh-sm">
-                        <span class="d-block mb-1">Web page:</span>
-                        <a href="#">www.htmlstream.com/natalie</a>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item pt-0 pb-4">
-                    <div class="media">
-                      <span class="fas fa-map-marker-alt list-group-icon mr-3"></span>
-                      <div class="media-body text-lh-sm">
-                        <span class="d-block mb-1">Location:</span>
-                        <a href="#">London, England</a>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <!-- End List Group -->
+              <div class="col-md-6 mb-3 mb-md-0">
+                <div class="input-group-pill mb-2">
+                  <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                </div>
+            
+                <div class="input-group-pill mb-2">
+                  <input type="textarea" class="form-control" placeholder="Address" aria-label="Address">
+                </div>
               </div>
-
-              <div class="col-md-6 col-lg-4">
-                <!-- List Group -->
-                <ul class="list-group list-group-transparent list-group-flush list-group-borderless mb-0">
-                  <li class="list-group-item pt-0 pb-4">
-                    <div class="media">
-                      <span class="fas fa-birthday-cake list-group-icon mr-3"></span>
-                      <div class="media-body text-lh-sm">
-                        <span class="d-block mb-1">Birthday:</span>
-                        <span class="d-block text-muted">May 3, 1986</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item pt-0 pb-4">
-                    <div class="media">
-                      <span class="fas fa-building list-group-icon mr-3"></span>
-                      <div class="media-body text-lh-sm">
-                        <span class="d-block mb-1">Organization:</span>
-                        <a href="#">Pixeel Ltd.</a>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item pt-0 pb-4">
-                    <div class="media">
-                      <span class="fas fa-mobile-alt list-group-icon mr-3"></span>
-                      <div class="media-body text-lh-sm">
-                        <span class="d-block mb-1">Phone number:</span>
-                        <a href="#">+44 (0161) 347 8854</a>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <!-- End List Group -->
-              </div>
-
-              <div class="col-md-6 col-lg-4">
-                <!-- List Group -->
-                <ul class="list-group list-group-transparent list-group-flush list-group-borderless mb-0">
-                  <li class="list-group-item pt-0 pb-4">
-                    <div class="media">
-                      <span class="fas fa-globe list-group-icon mr-3"></span>
-                      <div class="media-body text-lh-sm">
-                        <span class="d-block mb-1">Language:</span>
-                        <span class="d-block text-muted">English, French</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item pt-0 pb-4">
-                    <div class="media">
-                      <span class="fas fa-tags list-group-icon mr-3"></span>
-                      <div class="media-body text-lh-sm">
-                        <span class="d-block mb-1">Skills:</span>
-                        <a href="#">HTML5,</a>
-                        <a href="#">CSS3,</a>
-                        <a href="#">JavaScript,</a>
-                        <a href="#">jQuery</a>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <!-- End List Group -->
+            
+              <div class="col-md-6 mb-3 mb-md-0">
+                <div class="input-group-pill mb-2">
+                  <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" placeholder="Phone Number">
+                </div>
+            
+                <div class="input-group-pill mb-2">
+                  <input type="text" class="form-control" placeholder="Disabled" aria-label="Disabled" disabled>
+                </div>
               </div>
             </div>
             <!-- End Icon Blocks -->
@@ -1168,7 +1093,7 @@
               </div>
               <!-- End Author -->
 
-              <p>At the end of the day, it's important to not let being busy distract us from having fun. Smiling, laughing, and hanging helps us work together to achieve this.</p>
+              <p>She was on time and cookies were oustanding. Definitly will be ordering again!!</p>
 
               <!-- Likes/Reply -->
               <ul class="list-inline d-flex">
@@ -1232,7 +1157,7 @@
               </div>
               <!-- End Author -->
 
-              <p>It's important to stay detail oriented with every project we tackle. Staying focused allows us to turn every project we complete into something we love. We strive to embrace and drive change in our industry which allows us to keep our clients relevant and ready to adapt.</p>
+              <p>Cake was moist and delicious, and the frosting was to die for!!</p>
 
               <!-- Likes/Reply -->
               <ul class="list-inline d-flex">
