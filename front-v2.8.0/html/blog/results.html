@@ -125,7 +125,14 @@
     <!-- Sticky Block End Point -->
     <div id="stickyBlockEndPoint"></div>
 
+    <!--Routing logic-->
+    <script>
+   $(window).on('load', function(data){
+     $(".bkrimg").append(res.body.image);
+     $(".bakerName").append(res.body.firstName + "" + res.body.lastName);
+   })
+    </script>
   </main>
-  <!-- ========== END MAIN ========== -->
+//  <!-- ========== END MAIN ========== -->
 
  
