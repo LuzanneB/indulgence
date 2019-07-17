@@ -14,25 +14,10 @@ module.exports = function(app) {
   app.get("/api/bakers/:zipcode/:product", function(req, res) {
     db.findAll({
       where: {
-        zipCode: req.params.zipCode,
-        product: req.params.product
+        zipCode: req.body.zipCode,
+        product: req.body.value
       }
     }).then(function(data) {
-      for (var i = 0; i < 10; i++) {
-        let firstName = data.Bakers[i].firstName;
-        let lastName = data.Bakers[i].lastName;
-        let phoneNumber = data.Bakers[i].phoneNumber;
-        let email = data.Bakers[i].email;
-        let zipCode = data.Bakers[i].zipCode;
-        let streetAddress = data.Bakers[i].streetAddress;
-        let city = data.Bakers[i].city;
-        let state = data.Bakers[i].state;
-        let image = data.Bakers[i].image;
-
-      $(".bkrimg").append(image);
-      $(".bakerName").append(firstName, lastName);
-      $(".bakerLink").html("<a href='./account/profile.html'></a>")
-      }
       res.json(data);
     });
   });
