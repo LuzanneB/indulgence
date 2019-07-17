@@ -23342,3 +23342,7 @@ header {
 /*------------------------------------
   File for your custom SCSS style
 ------------------------------------*/
+#submitform {
+  align-items: center,
+  
+}
