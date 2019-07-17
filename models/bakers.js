@@ -35,5 +35,14 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING
     }
   });
+
+  Bakers.associate = function(models) {
+    // Associating Bakers with Products
+    // When a Baker is deleted, also delete any associated Products
+    Bakers.hasMany(models.Products, {
+      onDelete: "cascade"
+    });
+  };
+
   return Bakers;
 };
