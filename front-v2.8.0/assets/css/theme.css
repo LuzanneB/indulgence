@@ -23316,6 +23316,10 @@ label.btn {
   }
 }
 
+#weddingreview {
+  object-fit: cover;
+}
+
 /*------------------------------------
   File for your custom SCSS style
 ------------------------------------*/

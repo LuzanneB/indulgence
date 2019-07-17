@@ -6,17 +6,18 @@ module.exports = function(sequelize, DataTypes) {
       validate: {
         len: [1]
       }
-    },
-    foreignKey: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      validate: {
-        len: [1]
-      }
     }
   });
 
-  //We will need to include here the associate information so that when working for real, the products are assoiciated with the baker.
+  Products.associate = function(models) {
+    // Products belong to bakers
+    // A Product can't be created without a Baker due to the foreign key constraint
+    Products.belongsTo(models.Bakers, {
+      foreignKey: {
+        allowNull: false
+      }
+    });
+  };
 
   return Products;
 };
