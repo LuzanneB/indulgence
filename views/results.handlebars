@@ -1,0 +1,153 @@
+ <!-- ========== HEADER ========== -->
+  <header id="header" class="u-header u-header--abs-top-md u-header--bg-transparent u-header--show-hide-md"
+          data-header-fix-moment="500"
+          data-header-fix-effect="slide">
+
+      <div id="logoAndNav" class="container">
+        <!-- Nav -->
+        <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
+          <!-- Logo -->
+          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="Cuisi">
+           
+            <img src="cuisilogo.png" alt="Cuisi Logo" style="width:45px;height:45px;">
+            <span class="u-header__navbar-brand-text">Cuisi</span>
+          </a>
+          <!-- End Logo -->
+
+          <!-- Responsive Toggle Button -->
+          <button type="button" class="navbar-toggler btn u-hamburger"
+                  aria-label="Toggle navigation"
+                  aria-expanded="false"
+                  aria-controls="navBar"
+                  data-toggle="collapse"
+                  data-target="#navBar">
+            <span id="hamburgerTrigger" class="u-hamburger__box">
+              <span class="u-hamburger__inner"></span>
+            </span>
+          </button>
+          <!-- End Responsive Toggle Button -->
+
+          <!-- Navigation -->
+          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
+            <ul class="navbar-nav u-header__navbar-nav">
+     
+              <!-- Button -->
+              <li class="nav-item u-header__nav-last-item">
+                <a class="btn btn-sm btn-primary transition-3d-hover" href="../account/profile.html" target="_blank">
+                  Register to be a Chef
+                </a>
+              </li>
+              <!-- End Button -->
+            </ul>
+          </div>
+          <!-- End Navigation -->
+        </nav>
+        <!-- End Nav -->
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->  
+  
+  
+  <!-- ========== MAIN ========== move to handlebars starting here -->
+  <main id="content" role="main">
+    <!-- Blog List Section -->
+    <div class="container space-2 space-top-md-5 space-top-lg-4">
+      <!-- Title -->
+      <div class="w-md-80 w-lg-60 mb-9">
+        <h1 class="font-weight-normal">Bakers in your area:</h1>
+      </div>
+      <!-- End Title -->
+
+      <div class="row">
+        <div class="col-lg-9 order-lg-2 mb-9 mb-lg-0">
+          <!-- -->
+          <!-- Blog List News -->
+          <article class="d-block card border-0 mb-7">
+            <div class="card-body p-0">
+              <div class="row">
+                <div class="col-sm-5 mb-5 mb-sm-0">
+                  <img class="img-fluid w-100 rounded bkrimg" src="#" alt="Baker Img .bkrimg">
+                </div>
+
+                <div class="col-sm-7">
+                  <div class="pt-1 pr-4">
+                    <p>Turnaround Time: <span class="turnaround">.turnAround</span> </p>
+                    <div class="mb-7">
+                      <h2 class="h5">
+                        <a href="#" class="bakerLink"><span class="bakerName">.bakerName(text) .bakerLink(href) to Baker Profile</span></a>
+                      </h2>
+                      <p>available products</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- End Blog News -->
+
+        </div>
+
+        <div id="stickyBlockStartPoint" class="col-lg-3 order-lg-1">
+          <!-- Sticky Block -->
+          <div class="js-sticky-block"
+               data-offset-target="#logoAndNav"
+               data-parent="#stickyBlockStartPoint"
+               data-sticky-view="lg"
+               data-start-point="#stickyBlockStartPoint"
+               data-end-point="#stickyBlockEndPoint"
+               data-offset-top="32"
+               data-offset-bottom="170">
+            <h3 class="h5 text-primary font-weight-semi-bold mb-4">Your Search</h3>
+
+            <!-- Thumbnail News -->
+            <article class="card border-0 mb-5">
+              <div class="card-body p-0">
+                <div class="media">
+                  <div class="u-avatar mr-3">
+                    <img class="img-fluid rounded productImg" src="#" alt="product icon .productImg">
+                  </div>
+                  <div class="media-body">
+                    <h4 class="h6 font-weight-normal mb-0">                   
+                        <span class="zipcode">.zipcode</span>, <span class="query">.query</span>
+                      </a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- End Thumbnail News -->
+
+            <hr class="my-7">
+
+            <h3 class="h5 text-primary font-weight-semi-bold mb-4">Change Search</h3>
+
+            <!-- Search for other products:-->
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item pb-3">
+                <a class="btn btn-xs btn-gray btn-pill" href="#">Cakes</a>
+              </li>
+              <li class="list-inline-item pb-3">
+                <a class="btn btn-xs btn-gray btn-pill" href="#">Cookies</a>
+              </li>
+              <li class="list-inline-item pb-3">
+                <a class="btn btn-xs btn-gray btn-pill" href="#">Pies</a>
+              </li>
+              <li class="list-inline-item pb-3">
+                <a class="btn btn-xs btn-gray btn-pill" href="#">Donuts</a>
+              </li>
+              <li class="list-inline-item pb-3">
+                <a class="btn btn-xs btn-gray btn-pill" href="#">Cupcakes</a>
+              </li>
+              <li class="list-inline-item pb-3">
+                <a class="btn btn-xs btn-gray btn-pill" href="#">Brownies</a>
+              </li>
+            </ul>
+            <!-- End Tags -->
+          </div>
+          <!-- End Sticky Block -->
+        </div>
+      </div>
+    </div>
+    <!-- End Blog List Section -->
+
+    <!-- Sticky Block End Point -->
+    <div id="stickyBlockEndPoint"></div>
