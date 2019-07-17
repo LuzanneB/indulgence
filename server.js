@@ -98,7 +98,8 @@ db.sequelize.sync(syncOptions).then(function() {
 //       5: 'Cupcakes',
 //       6: 'Brownies'
 //   };
-
+//    //When the database is populated we are setting the foreignKeys that associate the product with the bakers.
+//    //The incrementerStart is id of the first baker, the incrementer stop is the id of the last baker.
 //   let incrementerStart = 1;
 //   let incrementerStop = 50;
 
@@ -135,8 +136,5 @@ db.sequelize.sync(syncOptions).then(function() {
 // }
 
 // generateProducts();
-
-
-
 
 module.exports = app;
