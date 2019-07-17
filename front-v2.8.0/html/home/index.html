@@ -103,10 +103,15 @@
           </div>
         </div>
         <!-- End Content -->
-
+        <g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#mainHeroBlock2);">
+            
+            
+        <path class="main-hero-0 fill-primary" opacity=".05" d="M285.2,170.1c-94.5,8.6-181.2,57.4-235.9,134.8C-34.7,423.6-54.5,621.5,349,879.8  c636.5,407.6,600,9.3,591.9-47.4c-0.8-5.5-1.4-11.1-2-16.6l-34.2-374.1C888.4,262,729.2,129.6,549.4,146L285.2,170.1z">
         <image id="SVGMainHeroImg1" style="overflow:visible;" width="750" height="750"
           src="https://www.readyseteat.com/sites/g/files/qyyrlu501/files/uploadedImages/img_6030_98771.jpg"
           transform="matrix(1.4462 0 0 1.4448 290.09 0)"></image>
+        </path>
+      </g>
 
       </div>
     </div>
@@ -420,9 +425,11 @@
       console.log(zipInput);
 
       $(".iconbutton").on("click", function () {
-        var productInput = $(".iconbutton").val();
+        var productInput = $(this).attr("value"); 
         console.log(productInput);
       })
+
+     
 
       //Click events
       $(document).on("click", "button.search", getBakers);
