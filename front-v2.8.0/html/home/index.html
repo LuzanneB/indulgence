@@ -148,7 +148,7 @@
         <div class="col-md-2 mb-7">
           <div class="text-center px-lg-3">
             <span class="btn btn-icon btn-lg btn-soft-primary rounded-circle mb-5">
-              <span class="icon button" value="cake">
+              <span class="iconbutton" value="cake">
               <img src="cakeicon.png" style="height: 65px; width: 65px" class="ffa-2x btn-icon__inner btn-icon__inner-bottom-minus"></img>
               </span>
             </span>
@@ -232,7 +232,7 @@
                   <input type="textarea" class="form-control text-center" placeholder="zip code" id="zipcode" aria-label="Name">
                 </div>
             <br>
-            <a class="btn btn-soft-primary btn-wide transition-3d-hover" id = "searchzip" href="../pages/login-simple.html">Search</a>
+            <a class="btn btn-soft-primary btn-wide transition-3d-hover" id = "search" href="../pages/login-simple.html">Search</a>
       </div>
       </div>
       <!--end zip search-->
@@ -351,6 +351,9 @@
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
 
+
+
+
   <!-- ========== FOOTER ========== -->
   <footer>
    
@@ -413,7 +416,31 @@
 
   <!-- JS Plugins Init. -->
   <script>
-    $(window).on('load', function () {
+$(window).on('load', function () {
+
+//logic for routing
+var zipInput = $("#zipcode").val();
+var productInput = $(".iconbutton").val();
+
+//Click events
+$(document).on("click", "button.search", getBakers);
+
+function getBakers(){
+  $.get("/api/bakers/:" + zipInput + "/:" + productInput, function(data){
+    console.log("Bakers", data);
+  })
+  .then(function(){
+    window.location.href = "/results";
+  });
+}
+
+
+
+
+
+
+
+
       // initialization of HSMegaMenu component
       $('.js-mega-menu').HSMegaMenu({
         event: 'hover',
