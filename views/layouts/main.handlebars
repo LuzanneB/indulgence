@@ -1,15 +1,165 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+  <!-- Title -->
+  <title>Cuisi | Home Page</title>
+
+  <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
-  <title>Home Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="cuisilogo.png">
+
+  <!-- Google Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
+  <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="../../assets/vendor/fancybox/jquery.fancybox.css">
+  <link rel="stylesheet" href="../../assets/vendor/slick-carousel/slick/slick.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="../../assets/css/theme.css">
 </head>
 
 <body>
   {{{body}}}
+    <!-- ========== FOOTER ========== -->
+  <footer>
+   
+
+    <!-- Copyright -->
+    <div class="container text-center space-1">
+      <!-- Logo -->
+      <a class="d-inline-flex align-items-center mb-2" href="index.html" aria-label="Cuisi">
+        <img src="cuisilogo.png" width="36px" height="36px">
+       
+        <span class="brand brand-primary">Cuisi</span>
+      </a>
+      <!-- End Logo -->
+      <p class="small text-muted">&copy; Cuisi. 2019 Indulgence. All rights reserved.</p>
+      <a class="d-inline-flex align-items-center mb-2 font-weight-normal" href="https://forrager.com/laws/" target="_blank">Cottage Food Laws</a>
+    </div>
+    <!-- End Copyright -->
+  </footer>
+  
+
+  <!-- Go to Top -->
+  <a class="js-go-to u-go-to" href="#"
+    data-position='{"bottom": 15, "right": 15 }'
+    data-type="fixed"
+    data-offset-top="400"
+    data-compensation="#header"
+    data-show-effect="slideInUp"
+    data-hide-effect="slideOutDown">
+    <span class="fas fa-arrow-up u-go-to__inner"></span>
+  </a>
+  <!-- End Go to Top -->
+
+   <!-- JS Global Compulsory -->
+  <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="../../assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
+  <script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="../../assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+  <script src="../../assets/vendor/typed.js/lib/typed.min.js"></script>
+  <script src="../../assets/vendor/slick-carousel/slick/slick.js"></script>
+
+  <!-- JS Front -->
+  <script src="../../assets/js/hs.core.js"></script>
+  <script src="../../assets/js/components/hs.header.js"></script>
+  <script src="../../assets/js/components/hs.unfold.js"></script>
+  <script src="../../assets/js/components/hs.focus-state.js"></script>
+  <script src="../../assets/js/components/hs.malihu-scrollbar.js"></script>
+  <script src="../../assets/js/components/hs.validation.js"></script>
+  <script src="../../assets/js/components/hs.fancybox.js"></script>
+  <script src="../../assets/js/components/hs.slick-carousel.js"></script>
+  <script src="../../assets/js/components/hs.show-animation.js"></script>
+  <script src="../../assets/js/components/hs.svg-injector.js"></script>
+  <script src="../../assets/js/components/hs.go-to.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(window).on('load', function () {
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 767.98,
+        hideTimeOut: 0
+      });
+
+      // initialization of svg injector module
+      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+    });
+
+    $(document).on('ready', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
+
+      // initialization of unfold component
+      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+        afterOpen: function () {
+          $(this).find('input[type="search"]').focus();
+        }
+      });
+
+      // initialization of malihu scrollbar
+      $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+
+      // initialization of forms
+      $.HSCore.components.HSFocusState.init();
+
+      // initialization of form validation
+      $.HSCore.components.HSValidation.init('.js-validate', {
+        rules: {
+          confirmPassword: {
+            equalTo: '#signupPassword'
+          }
+        }
+      });
+
+      // initialization of show animations
+      $.HSCore.components.HSShowAnimation.init('.js-animation-link');
+
+      // initialization of fancybox
+      $.HSCore.components.HSFancyBox.init('.js-fancybox');
+
+      // initialization of text animation (typing)
+      var typed = new Typed(".u-text-animation.u-text-animation--typing", {
+        strings: ["culinary convenience.", "the perfect confections.", "homecooking bliss.", "delectable cuisine."],
+        typeSpeed: 60,
+        loop: true,
+        backSpeed: 25,
+        backDelay: 1500
+      });
+
+      // initialization of slick carousel
+      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+
+    //animate products 
+   
+
+
+    //show hide zip code search 
+    
+
+ 
+  </script>
 </body>
 
 </html>
