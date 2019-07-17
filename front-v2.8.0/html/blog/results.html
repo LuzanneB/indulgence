@@ -128,8 +128,8 @@
     <!--Routing logic-->
     <script>
    $(window).on('load', function(data){
-     $(".bkrimg").append(res.body.image);
-     $(".bakerName").append(res.body.firstName + "" + res.body.lastName);
+     $(".bkrimg").append(res.image);
+     $(".bakerName").append(res.firstName + " " + res.lastName);
    })
     </script>
   </main>
