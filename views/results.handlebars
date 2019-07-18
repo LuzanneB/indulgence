@@ -204,7 +204,7 @@
 
       }).then(function (data) {
         console.log(data[0].firstName)
-        $(".bakerName").html('<a href="' + "URL GOES HERE" + '" class="bakerLink">' + data[0].firstName + ' ' + data[0].lastName + '</a>' + '<br>' + data[0].streetAddress + "<br>" + data[0].city + " " + data[0].state + ", " + data[0].zipCode + "<br>" + data[0].phoneNumber);
+        $(".bakerName").html('<a href="' + "/profile" + '" class="bakerLink">' + data[0].firstName + ' ' + data[0].lastName + '</a>' + '<br>' + data[0].streetAddress + "<br>" + data[0].city + " " + data[0].state + ", " + data[0].zipCode + "<br>" + data[0].phoneNumber);
         $(".imgHere").html('<img class="img-fluid w-100 rounded bkrimg" src="' + data[0].image +'" alt="Baker Img">');
         $(".zipcode").html('<p>Zip Code: ' + item + '</p>' + '<br>' + '<p>Delicacy: ' + product + '</p>')
         $("productImage").html('<img class="img-fluid rounded productImg" src="/front-v2.8.0/html/home/' + product + 'icon.png" alt="product icon .productImg">')
