@@ -339,10 +339,11 @@
   $(window).on("load", function () {
     //logic for routing
 
-
+  var productInput = "cookie";
     $(".iconbutton").on("click", function () {
-      var productInput = $(this).attr("value");
+      productInput = $(this).attr("value");
       console.log(productInput);
+      return productInput
     });
 
     //Click events
@@ -355,6 +356,8 @@
       var zipInput = $("#zipcode").val();
       console.log(zipInput);
       localStorage.setItem("zip", zipInput);
+      console.log(productInput + "Should be product name");
+      localStorage.setItem("product", productInput)
       window.location.href = "/results"
 
     }
