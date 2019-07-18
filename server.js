@@ -61,7 +61,7 @@ db.sequelize.sync(syncOptions).then(function() {
 //     image: ""
 //   };
 //   // var users = [];
-//   for (var i = 0; i < 5000; i++) {
+//   for (var i = 0; i < 500; i++) {
 //     userObj.firstName = faker.name.firstName();
 //     userObj.lastName = faker.name.lastName();
 //     userObj.phoneNumber = faker.phone.phoneNumberFormat();
@@ -122,7 +122,7 @@ db.sequelize.sync(syncOptions).then(function() {
 //               thisBakersProducts.push(randomProduct);
 //               // newProductTableLine.push(randomProduct, bakerID);
 //               productObj.category = randomProduct;
-//               productObj.foreignKey = bakerID
+//               productObj.BakerId = bakerID
 
 //               console.log(productObj);
 

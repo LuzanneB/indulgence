@@ -5,19 +5,26 @@ var db = require("../models");
 module.exports = function(app) {
   // GET all groups
   app.get("/api/bakers", function(req, res) {
-    db.findAll({}).then(function(data) {
+    db.Bakers.findAll({}).then(function(data) {
       res.json(data);
     });
   });
 
   // GET all bakers in a zipcode by product
-  app.get("/api/bakers/:zipcode/:product", function(req, res) {
-    db.findAll({
+  app.get("/api/bakers/:zipcode", function(req, res) {
+    console.log(req.params.zipcode);
+
+    db.Bakers.findAll({
       where: {
-        zipCode: req.body.zipCode,
-        product: req.body.value
+        zipCode: req.params.zipcode
       }
     }).then(function(data) {
+      console.log(data[0]);
+
+      // var dataObj = {
+      //   dbData: data[0]
+      // };
+      // res.render("results", dataObj);
       res.json(data);
     });
   });
