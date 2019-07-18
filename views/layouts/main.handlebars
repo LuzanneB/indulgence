@@ -19,6 +19,9 @@
   <link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css">
   <link rel="stylesheet" href="/assets/vendor/hs-megamenu/src/hs.megamenu.css">
   <link rel="stylesheet" href="/assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="/assets/vendor/summernote/dist/summernote-lite.css">
+  <link rel="stylesheet" href="/assets/vendor/bootstrap-tagsinput/css/bootstrap-tagsinput.css">
+  <link rel="stylesheet" href="/assets/vendor/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="/assets/vendor/fancybox/jquery.fancybox.css">
   <link rel="stylesheet" href="/assets/vendor/slick-carousel/slick/slick.css">
 
@@ -71,9 +74,12 @@
   <script src="/assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
   <script src="/assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="/assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="/assets/vendor/summernote/dist/summernote-lite.js"></script>
   <script src="/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
   <script src="/assets/vendor/typed.js/lib/typed.min.js"></script>
   <script src="/assets/vendor/slick-carousel/slick/slick.js"></script>
+  <script src="/assets/vendor/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"></script>
+  <script src="/assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
 
   <!-- JS Front -->
   <script src="/assets/js/hs.core.js"></script>
@@ -83,6 +89,8 @@
   <script src="/assets/js/components/hs.malihu-scrollbar.js"></script>
   <script src="/assets/js/components/hs.validation.js"></script>
   <script src="/assets/js/components/hs.fancybox.js"></script>
+  <script src="/assets/js/components/hs.summernote-editor.js"></script>
+  <script src="/assets/js/components/hs.range-datepicker.js"></script>
   <script src="/assets/js/components/hs.slick-carousel.js"></script>
   <script src="/assets/js/components/hs.show-animation.js"></script>
   <script src="/assets/js/components/hs.svg-injector.js"></script>
@@ -134,6 +142,12 @@
 
       // initialization of fancybox
       $.HSCore.components.HSFancyBox.init('.js-fancybox');
+
+            // initialization of range datepicker
+      $.HSCore.components.HSRangeDatepicker.init('.js-range-datepicker');
+
+      // initialization of text editors
+      $.HSCore.components.HSSummernoteEditor.init('.js-summernote-editor');
 
       // initialization of text animation (typing)
       var typed = new Typed(".u-text-animation.u-text-animation--typing", {
