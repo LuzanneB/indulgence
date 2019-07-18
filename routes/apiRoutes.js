@@ -14,8 +14,8 @@ module.exports = function(app) {
   app.get("/api/bakers/:zipcode/:product", function(req, res) {
     db.findAll({
       where: {
-        zipCode: req.body.zipCode,
-        product: req.body.value
+        zipCode: req.body.zipInput,
+        product: req.body.productInput
       }
     }).then(function(data) {
       res.json(data);
