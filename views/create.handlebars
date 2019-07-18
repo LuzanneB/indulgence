@@ -357,14 +357,10 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script type="text/javascript">
+
   $(document).ready(function () {
     console.log("Hi Brian! This script is running.")
-    
-    
-    {{!-- addBakerToDB = function (bakerData) {
-      console.log("You called addBakerToDB()")
-      $.post("/api/newBaker", bakerData)
-    } --}}
+
 
     getBakerData = function (event) {
       let formInputFirstName = $("#firstNameInput").val().trim();
@@ -376,16 +372,6 @@
       let formInputState = $("#stateInput").val().trim();
       let formInputZipCode = $("#zipcodeInput").val().trim();
       let formInputImage = $("#photoInput").val().trim();
-      console.log("You clicked submit!")
-      console.log("First Name " + formInputFirstName);
-      console.log("Last Name " + formInputLastName);
-      console.log("Phone " + formInputPhoneNumber);
-      console.log("Email " + formInputEmail);
-      console.log("Address " + formInputStreetAddress);
-      console.log("City " + formInputCity);
-      console.log("State " + formInputState);
-      console.log("Zip " + formInputZipCode);
-      console.log("Image " + formInputImage);
 
       let bakerObj = {
         firstName: formInputFirstName,
@@ -400,27 +386,25 @@
       }
       console.log(bakerObj);
 
-      {{!-- addBakerToDb(bakerObj); --}}
-      $.post("/api/newBaker", bakerObj);
+      $.post("/api/newBaker", bakerObj)
+      
+      
+      
+
     }
 
-
-
-
+    let postProduct = function () {
+      let productObj = {
+        category: "This is the third bestest cake ever.",
+        bakerId: 1
+      };
+      console.log(productObj);
+      $.post("/api/newProduct", productObj);
+    }
 
     $(document).on("click", "#submitBakerForm", getBakerData);
 
-
-
   });
-
-
-
-
-
-
-
-
 
 
 

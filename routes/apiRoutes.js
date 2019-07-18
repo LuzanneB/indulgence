@@ -22,6 +22,8 @@ module.exports = function(app) {
     });
   });
 
+  
+
   // POST a new Baker
   app.post("/api/newBaker", function(req, res) {
     console.log(req.body);
@@ -35,6 +37,15 @@ module.exports = function(app) {
       city: req.body.city,
       state: req.body.state,
       image: req.body.image
+    }).then(function(data) {
+      res.json(data);
+    });
+  });
+  app.post("/api/newProduct", function(req, res) {
+    console.log(req.body);
+    db.Products.create({
+      category: req.body.category,
+      bakerId: req.body.bakerId
     }).then(function(data) {
       res.json(data);
     });
