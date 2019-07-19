@@ -96,6 +96,11 @@ abbr[data-original-title] {
   text-decoration-skip-ink: none;
 }
 
+
+
+
+
+
 address {
   margin-bottom: 1rem;
   font-style: normal;
@@ -23345,4 +23350,13 @@ header {
 #submitform {
   align-items: center,
   
+}
+
+.imageicon {
+  width: 65px;
+  height: 65px
+}
+.imageicon:active {
+  width: 70px;
+  height: 70px;
 }
