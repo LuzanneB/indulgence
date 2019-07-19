@@ -126,9 +126,9 @@
       <div class="col-md-2 mb-7">
         <div class="text-center px-lg-3">
           <span class="btn btn-icon btn-lg btn-soft-primary rounded-circle mb-5">
-            <span class="icon button" value="cake">
-              <img src="/img/cakeicon.png" style="height: 65px; width: 65px"
-                class="ffa-2x btn-icon__inner btn-icon__inner-bottom-minus"></img>
+            <span class="iconbutton" value="cake">
+              <img src="/img/cakeicon.png" 
+                class="ffa-2x btn-icon__inner btn-icon__inner-bottom-minus imageicon"></img>
             </span>
           </span>
           <h3 class="h5">Cakes</h3>
@@ -140,8 +140,7 @@
         <div class="text-center px-lg-3">
           <span class="btn btn-icon btn-lg btn-soft-primary rounded-circle mb-5">
             <span class="iconbutton" value="cookie">
-              <img src="/img/Cookieicon.png" style="height: 65px; width: 65px"
-                class="ffa-2x btn-icon__inner btn-icon__inner-bottom-minus"></img>
+              <img src="/img/Cookieicon.png" class="ffa-2x btn-icon__inner btn-icon__inner-bottom-minus imageicon"></img>
             </span>
           </span>
           <h3 class="h5">Cookies</h3>
@@ -153,8 +152,8 @@
         <div class="text-center px-lg-3">
           <span class="btn btn-icon btn-lg btn-soft-primary rounded-circle mb-5">
             <span class="iconbutton" value="pie">
-              <img src="/img/Pieicon.png" style="height: 65px; width: 65px"
-                class="ffa-2x btn-icon__inner btn-icon__inner-bottom-minus"></img>
+              <img src="/img/Pieicon.png"
+                class="ffa-2x btn-icon__inner btn-icon__inner-bottom-minus imageicon"></img>
             </span>
           </span>
           <h3 class="h5">Pies</h3>
@@ -166,8 +165,8 @@
         <div class="text-center px-lg-3">
           <span class="btn btn-icon btn-lg btn-soft-primary rounded-circle mb-5">
             <span class="iconbutton" value="donut">
-              <img src="/img/donuticon.png" style="height: 65px; width: 65px"
-                class="fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></img>
+              <img src="/img/donuticon.png"
+                class="fa-2x btn-icon__inner btn-icon__inner-bottom-minus imageicon"></img>
             </span>
           </span>
           <h3 class="h5">Donuts</h3>
@@ -179,8 +178,8 @@
         <div class="text-center px-lg-3">
           <span class="btn btn-icon btn-lg btn-soft-primary rounded-circle mb-5">
             <span class="iconbutton" value="cupcake">
-              <img src="/img/cupcakeicon.png" style="height: 65px; width: 65px"
-                class="ffa-2x btn-icon__inner btn-icon__inner-bottom-minus"></img>
+              <img src="/img/cupcakeicon.png" 
+                class="ffa-2x btn-icon__inner btn-icon__inner-bottom-minus imageicon"></img>
             </span>
           </span>
           <h3 class="h5">Cupcakes</h3>
@@ -192,8 +191,8 @@
         <div class="text-center px-lg-3">
           <span class="btn btn-icon btn-lg btn-soft-primary rounded-circle mb-5">
             <span class="iconbutton" value="brownie">
-              <img src="/img/Brownieicon.png" style="height: 65px; width: 65px"
-                class="ffa-2x btn-icon__inner btn-icon__inner-bottom-minus"></img>
+              <img src="/img/Brownieicon.png" 
+                class="ffa-2x btn-icon__inner btn-icon__inner-bottom-minus imageicon"></img>
             </span>
           </span>
           <h3 class="h5">Brownies</h3>
@@ -350,12 +349,17 @@
 
   var productInput = "cookie";
     $(".iconbutton").on("click", function () {
-      productInput = $(this).attr("value");
+    productInput = $(this).attr("value");
+    
+       
       console.log(productInput);
       return productInput
+      $(".iconbutton").animate({ height: "500px" });
     });
 
-    //Click events
+ 
+      
+  
 
 
     function getBakers() {
